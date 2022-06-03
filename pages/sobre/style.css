@@ -1,0 +1,19 @@
+/*
+'Mulish', sans-serif;
+'Poppins', sans-serif;
+azul bb #34e2fd
+branc #ebebeb
+*/
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container .content h1{
+    color: #ebebeb;
+    font-size: 6em;
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px #e400ac, -2px -2px 0 #34e2fd, 2px -2px 0 #e400ac, -2px 2px 0 #34e2fd, 6px 6px 10px black;
+}

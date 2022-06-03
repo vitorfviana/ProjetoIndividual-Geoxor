@@ -1,0 +1,138 @@
+/*
+'Mulish', sans-serif;
+'Poppins', sans-serif;
+azul bb #34e2fd
+branc #ebebeb
+*/
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background: #100517;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: #cecece;
+}
+  
+  /* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #7e7e7e;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    background-color: #000000a0;
+}
+
+header .container_header .navbar ul a li{
+    font-weight: 100;
+    font-size: 1.5vw;
+    color: #cecece;
+}
+
+header .container_header .navbar ul a .now{
+    color: white;
+    border-bottom: 0.2vh solid white;
+}
+
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 4%;
+    color: #ebebeb;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+}
+
+.container .banner h1{
+    font-size: 3vw;
+    text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
+}
+
+.container .banner p{
+    font-size: 2.2vw;
+    text-shadow: 5px 5px 15px black;
+}
+
+.container .banner .buttons{
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+    color: #ebebeb;
+    font-size: 1.2vw;
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+}
+
+.buttons p{
+    font-size: 1.6vw;
+}
+
+.buttons .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons .login button{
+    background-color: #2294a5;
+    cursor: pointer;
+}
+
+.buttons .login button:hover{
+    background-color: rgb(28, 123, 138);
+}
+
+.buttons .cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons .cadastro button{
+    background-color: #c00090;
+    cursor: pointer;
+}
+
+.buttons .cadastro button:hover{
+    background-color: #a10079;
+}
+
+.container .banner .buttons button{
+    height: 6vh;
+    width: 10vw;
+    font-size: 1.6vw;
+    border-radius: 5px;
+    color: #ebebeb;
+}
+
+.container .section{
+    height: 100vh;
+    width: 100%;
+    background-color: #000000a0;
+}
+
+.container .section .infos{
+    height: 100%;
+}
