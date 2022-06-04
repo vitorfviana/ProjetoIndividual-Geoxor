@@ -63,6 +63,7 @@ header .container_header .navbar ul a .now{
 
 .container .banner h1{
     font-size: 3vw;
+    font-weight: 100;
     text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
 }
 
@@ -139,7 +140,42 @@ header .container_header .navbar ul a .now{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
     height: 100%;
     width: 80%;
-    color: white;
+    color: #ebebeb;
+    border: ;
+}
+
+
+.container .section .info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.container .section .infos h2{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
+    font-size: 2.8vw;
+}
+
+.container .section .infos p{
+    font-family: 'Mulish', sans-serif;
+    font-weight: 100;
+    color: #ebebeb;
+    font-size: 1.6vw;
+    max-width: 20vw;
+    margin-right: 3%;
+    line-height: 5.5vh;
+}
+
+
+.container .section .infos img{
+    border-radius: 50%;
+    border: #ebebeb 1px solid;
+    width: 11vw;
+    height: 11vw;
 }
