@@ -18,13 +18,24 @@ branc #ebebeb
     background: #cecece;
 }
   
-  /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
     background: #7e7e7e;
 }
 
 html{
     scroll-behavior: smooth;
+}
+
+body{
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../media/wall_lp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 /* header */
@@ -73,7 +84,6 @@ html{
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: lighter;
-    font-family: 'Mulish', sans-serif;
     -o-animation: gradiente 2s ease infinite;
     animation: gradiente 2s ease infinite;
 }
@@ -90,7 +100,6 @@ html{
 #header_lp .container_header .navbar{
     width: 25%;
     height: 100%;
-    font-family: 'Mulish', sans-serif;
 }
 
 #header_lp .container_header .navbar ul{
@@ -116,33 +125,6 @@ html{
     border-bottom: 0.1vh solid #ebebeb;
 }
 
-#header_lp .container_header .login{
-    width: 15%;
-    height: 100%;
-    font-family: 'Poppins', sans-serif;
-}
-
-#header_lp .container_header .login ul{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    list-style: none;
-    font-size: 1.3vw;
-}
-
-#header_lp .container_header .login ul .log{
-    color: white;
-    background-color: #7320ad;
-    border-radius: 5px;
-}
-
-#header_lp .container_header .login ul .cad{
-    color: #34e2fd;
-    background-color: #e400ac;
-    border-radius: 5px;
-}
-
 /* banner */
 
 .container .banner{
@@ -162,7 +144,6 @@ html{
     margin-top: 10vh;
     margin-bottom: 4%;
     color: #ebebeb;
-    font-family: 'Mulish', sans-serif;
     font-weight: 100;
 }
 
@@ -183,7 +164,6 @@ html{
     justify-content: space-between;
     color: #ebebeb;
     font-size: 1.2vw;
-    font-family: 'Mulish', sans-serif;
     font-weight: 100;
 }
 
@@ -239,6 +219,7 @@ html{
     height: 100vh;
     width: 100%;
     background-color: #000000ee;
+    border-top: 0.2vh solid #ebebeb;
 }
 
 .container .section .infos{
@@ -261,14 +242,12 @@ html{
 
 .container .section .infos h2{
     margin-top: 10vh;
-    font-family: 'Mulish', sans-serif;
     font-weight: 100;
     text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
     font-size: 2.8vw;
 }
 
 .container .section .infos p{
-    font-family: 'Mulish', sans-serif;
     font-weight: 100;
     color: #ebebeb;
     font-size: 1.6vw;
@@ -287,14 +266,12 @@ html{
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    width: 80%;
+    width: 100%;
     height: 100%;
-    border-top: 0.5vh solid #ebebeb;
 }
 
 .container .section .creator h2{
     color: #ebebeb;
-    font-family: 'Mulish', sans-serif;
     font-weight: 100;
     text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
     font-size: 2.8vw;
@@ -318,7 +295,6 @@ html{
 }
 
 .container .section .creator p{
-    font-family: 'Mulish', sans-serif;
     font-weight: 100;
     color: #ebebeb;
     font-size: 2vw;
