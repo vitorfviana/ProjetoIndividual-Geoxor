@@ -80,7 +80,7 @@ body{
 #header_lp .container_header a .titulo h1{
     font-size: 3vw;
     background: linear-gradient(235deg, #34e2fd, #3069c2, #7320ad, #e400ac);
-    background-size: 200% 200%;
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: lighter;
@@ -253,6 +253,13 @@ body{
     font-size: 1.6vw;
     max-width: 20vw;
     line-height: 5.5vh;
+    text-align: center;
+}
+
+.container .section .infos h3{
+    font-weight: 100;
+    text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
+    font-size: 2vw;
 }
 
 .container .section .infos img{

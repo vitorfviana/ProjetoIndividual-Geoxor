@@ -77,7 +77,7 @@ header .container_header a .titulo{
 header .container_header a .titulo h1{
     font-size: 3vw;
     background: linear-gradient(235deg, #1cd3ef, #faf796, #e41cb2);
-    background-size: 200% 200%;
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: lighter;
@@ -95,7 +95,6 @@ header .container_header a .titulo img{
 }
 
 header .container_header .navbar{
-    width: 25%;
     height: 100%;
 }
 
@@ -105,6 +104,10 @@ header .container_header .navbar ul{
     list-style: none;
     height: 100%;
     align-items: center;
+}
+
+header .container_header .navbar ul a{
+    margin: 0 5% 0 5%;
 }
 
 header .container_header .navbar ul a li{
@@ -126,6 +129,25 @@ header .container_header .navbar ul a .now{
     border-bottom: 0.1vh solid #ebebeb;
 }
 
+header .container_header .navbar ul a .login{
+    color: #128798;
+    font-weight: bold;
+}
+
+header .container_header .navbar ul a .cadastro{
+    color: #94006f;
+    font-weight: bold;
+}
+
+header .container_header .navbar ul a .login:hover{
+    color: #1cd3ef;
+    font-weight: bold;
+}
+
+header .container_header .navbar ul a .cadastro:hover{
+    font-weight: bold;
+    color: #e400ac;
+}
 
 /* CONTAINER */
 
