@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/global.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Geoxor - Musicas</title>
+</head>
+
+<body onload="validarSessao()">
+    <header>
+        <div class="container_header">
+            <a href="#section0">
+                <div class="titulo">
+                    <h1>GEOXOR</h1>
+                </div>
+            </a>
+            <div class="navbar">
+                <ul>
+                    <a href="../sobre/sobre.html">
+                        <li>Sobre</li>
+                    </a>
+                    <a href="musicas.html">
+                        <li class="now">Músicas</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="navbar">
+                <ul>
+                    <li onclick="limparSessao()" class="sair">Sair</li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div id="section0" class="banner">
+            <h2>Minhas músicas favoritas</h2>
+            <h3>Escute as 3 musicas que eu selecionei com base em algumas categorias e deixe seu Like se gostar!</h3>
+            <p>Caso queira escutar mais musicas:</p>
+            <div class="links">
+                <a href="https://www.youtube.com/c/Geoxor"><img src="../../media/youtube.png"></a>
+                <a href="https://soundcloud.com/geoxor"><img src="../../media/soundcloud.png"></a>
+                <a href="https://open.spotify.com/artist/1gZm7WtVj8XuaRWeN0Ft6s"><img src="../../media/spotify.png"></a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="boxes">
+                <div class="box">
+                    <h3>Primeira musica que eu escutei</h3>
+                    <div class="top_box">
+                        <h4>Your Eyes</h4>
+                        <img src="../../media/musica1.jpg">
+                    </div>
+                    <div class="mid_box">
+                        <audio controls="controls">
+                            <source src="../../media/your_eyes.mp3" type="audio/mp3"/>
+                        </audio>
+                        <div onclick="like1()" class="coracao"></div>
+                    </div>
+                    <div class="bot_box">
+                        <h4>Likes: <span id="likes1">0</span></h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>A musica que eu mais gosto</h3>
+                    <div class="top_box">
+                        <h4>Vanilla</h4>
+                        <img src="../../media/album1.jpg">
+                    </div>
+                    <div class="mid_box">
+                        <audio controls="controls">
+                            <source src="../../media/vanilla.mp3" type="audio/mp3"/>
+                        </audio>
+                        <div onclick="like2()" class="coracao"></div>
+                    </div>
+                    <div class="bot_box">
+                        <h4>Likes: <span id="likes2">0</span></h4>
+                    </div>
+                </div>
+                <div class="box">
+                    <h3>A que eu mais escuto atualmente</h3>
+                    <div class="top_box">
+                        <h4>Kill Aura</h4>
+                        <img src="../../media/musica3.jpg">
+                    </div>
+                    <div class="mid_box">
+                        <audio controls="controls">
+                            <source src="../../media/kill_aura.mp3" type="audio/mp3"/>
+                        </audio>
+                        <div onclick="like3()" class="coracao"></div>
+                    </div>
+                    <div class="bot_box">
+                        <h4>Likes: <span id="likes3">0</span></h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <ul>
+            <li>
+                <a href="https://github.com/vitorfviana">
+                    <div class="github"></div>
+                    <p>Github<p>
+                </a>
+            </li>
+            <li>
+                <a href="https://www.sptech.school">
+                    <div class="facu"></div>
+                    <p>Sptech School<p>
+                    </a>
+                </li>
+            </ul>
+        </footer>
+        
+    </body>
+    
+    </html>
+    <script src="../../js/script.js"></script>

@@ -1,0 +1,321 @@
+/*
+'Mulish', sans-serif;
+'Poppins', sans-serif;
+azul bb #34e2fd
+branc #ebebeb
+*/
+
+body{
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../media/wall_lp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* header */
+
+#header_lp{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 15vh;
+    align-items: center;
+    background-color: #00000000;
+    z-index: 100;
+    transition: ease-in-out 0.4s;
+}
+
+#header_lp.sticky{
+    height: 10vh;
+    background-color: #290d3a;
+}
+
+#header_lp .container_header{
+    display: flex;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+    justify-content: space-between;
+    padding: 1vh 0 1vh 0;
+    align-items: center;
+}
+
+#header_lp .container_header a{
+    text-decoration: none;
+}
+
+#header_lp .container_header a .titulo{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#header_lp .container_header a .titulo h1{
+    font-size: 3vw;
+    background: linear-gradient(235deg, #34e2fd, #3069c2, #7320ad, #e400ac);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+    -o-animation: gradiente 2s ease infinite;
+    animation: gradiente 2s ease infinite;
+}
+
+#header_lp .container_header a .titulo h1:hover{
+    font-weight: bold;
+}
+
+#header_lp .container_header a .titulo img{
+    width: 100%;
+    height: 60%;
+}
+
+#header_lp .container_header .navbar{
+    height: 100%;
+}
+
+#header_lp .container_header .navbar ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    height: 100%;
+    align-items: center;
+}
+
+#header_lp .container_header .navbar ul a li{
+    display: flex;
+    justify-content: center;
+    font-weight: 100;
+    width: 10vw;
+    font-size: 1.5vw;
+    color: #a0a0a0;
+    border: 0.1vh solid transparent;
+    transition: ease-in-out 0.3s;
+}
+
+#header_lp .container_header .navbar ul a li:hover{
+    font-weight: 100;
+    font-size: 1.5vw;
+    color: #ebebeb;
+    border-bottom: 0.1vh solid #ebebeb;
+}
+
+
+#header_lp .container_header .navbar ul a .login{
+    width: auto;
+    color: #128798;
+    font-weight: bold;
+}
+
+#header_lp .container_header .navbar ul a .cadastro{
+    width: auto;
+    color: #94006f;
+    font-weight: bold;
+}
+
+#header_lp .container_header .navbar ul a .login:hover{
+    color: #1cd3ef;
+    font-weight: bold;
+    border-color: transparent;
+}
+
+#header_lp .container_header .navbar ul a .cadastro:hover{
+    font-weight: bold;
+    color: #e400ac;
+    border-color: transparent;
+}
+
+/* banner */
+
+.container .banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+    background: #000000a0;
+}
+
+.banner .texto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vh;
+    margin-bottom: 4%;
+    color: #ebebeb;
+    font-weight: 100;
+}
+
+.container .banner h1{
+    font-size: 3vw;
+    font-weight: 100;
+    text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
+}
+
+.container .banner p{
+    font-size: 2.2vw;
+    text-shadow: 5px 5px 15px black;
+}
+
+.container .banner .buttons{
+    width: 33vw;
+    display: flex;
+    justify-content: space-between;
+    color: #ebebeb;
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+.buttons p{
+    font-size: 1.6vw;
+}
+
+.buttons .login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons .login button{
+    background-color: #2294a5;
+    cursor: pointer;
+}
+
+.buttons .login button:hover{
+    background-color: rgb(28, 123, 138);
+}
+
+.buttons .cadastro{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.buttons .cadastro button{
+    background-color: #c00090;
+    cursor: pointer;
+}
+
+.buttons .cadastro button:hover{
+    background-color: #a10079;
+}
+
+.container .banner .buttons button{
+    height: 6vh;
+    width: 10vw;
+    font-size: 1.6vw;
+    border-radius: 5px;
+    color: #ebebeb;
+}
+
+.container .section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000ee;
+    border-top: 0.2vh solid #ebebeb;
+}
+
+.container .section .infos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    color: #ebebeb;
+}
+
+
+.container .section .info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.container .section .infos h2{
+    margin-top: 10vh;
+    font-weight: 100;
+    text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
+    font-size: 2.8vw;
+}
+
+.container .section .infos p{
+    font-weight: 100;
+    color: #ebebeb;
+    font-size: 1.6vw;
+    max-width: 20vw;
+    line-height: 5.5vh;
+    text-align: center;
+}
+
+.container .section .infos h3{
+    font-weight: 100;
+    text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
+    font-size: 2vw;
+}
+
+.container .section .infos img{
+    border: #ebebeb 1px solid;
+    width: 22vw;
+    height: 22vh;
+}
+
+.container .section .creator{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.container .section .creator h2{
+    color: #ebebeb;
+    font-weight: 100;
+    text-shadow: 1px 1px #e400ac, -1px -1px 0 #34e2fd, 1px -1px 0 #e400ac, -1px 1px 0 #34e2fd, 5px 5px 15px black;
+    font-size: 2.8vw;
+    margin-top: 10vh;
+}
+
+.container .section .creator div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .section .creator img{
+    height: 15vw;
+    width: 15vw;
+    border-radius: 50%;
+    border: #ebebeb solid 2px;
+    filter: brightness(75%);
+    margin-bottom: 3vh;
+}
+
+.container .section .creator p{
+    font-weight: 100;
+    color: #ebebeb;
+    font-size: 2vw;
+    max-width: 55vw;
+    line-height: 5.5vh;
+    text-align: center;
+}
+
+.container .section .creator p a{
+    color: #ebebeb;
+}

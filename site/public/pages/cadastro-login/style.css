@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap');
+
+@-o-keyframes gradiente {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+@keyframes gradiente {
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
+}
+
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    font-family: 'Mulish', sans-serif;
+}
+
+body{
+    position: relative;
+    z-index: -10;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../media/wall_login.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container{
+    background-color: #000000a0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container h1{
+    position: fixed;
+    top: 5%;
+    left: 5%;
+    font-size: 3vw;
+    background: linear-gradient(235deg, #8ec6ec, #57bbfe, #ee52e4, #d97ed3);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 100;
+    -o-animation: gradiente 2s ease infinite;
+    animation: gradiente 2s ease infinite;
+}
+
+.container h1:hover{
+    font-weight: bold;
+}
+
+.card{
+    display: flex;
+    width: 30%;
+    height: 60%;
+    background-image: linear-gradient(to right top, #9ecfefa0, #a4cbffa0, #bac4ffa0, #dbbaffa0, #ffacf9a0);
+    border: 1px solid #ffffffa3;
+    border-radius: 5px;
+    box-shadow: rgb(0, 0, 0) 0 0 30px;
+}
+
+.form_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+.card .form_box .titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20%;
+}
+
+.card .form_box .titulo_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 20%;
+}
+
+.form_box .inputs{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.form_box .inputs_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 18%;
+}
+
+.form_box h2{
+    color: #ebebeb;
+    text-shadow: 1px 1px #ff54d4, -1px -1px 0 #51e5fc, 1px -1px 0 #ff54d4, -1px 1px 0 #51e5fc, 0 0 20px black;
+    font-size: 6vh;
+    font-weight: 100;
+}
+
+.form_box .input{
+    width: 65%;
+    height: 6vh;
+    background-color: #ebebeb;
+    border: #91f0ff 2px solid;
+    font-size: 2.2vh;
+    transition: 0s;
+    border-radius: 5px;
+    padding-left: 3%;
+    font-weight: bold;
+    margin: 1vh 0 1vh 0;
+}
+
+.form_box .input::placeholder{
+    color: #aeaeae;
+    font-weight: bold;
+}
+
+.form_box .input:hover{
+    border: #ff54d4 2px solid;
+    transition: 0.5s;
+}
+
+.form_box .input:focus{
+    border: #ff54d4 2px solid;
+}
+
+.form_box .botoes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+}
+
+.form_box .botoes_login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20%;
+}
+
+.form_box .botoes .botao {
+    height: 5.4vh;
+    background-color: #ff54d4;
+    width: 40%;
+    align-self: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2.4vh;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 1vh;
+}
+
+.form_box .botoes_login .botao {
+    height: 5.4vh;
+    background-color: #51e5fc;
+    width: 40%;
+    align-self: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 2.4vh;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+    margin-bottom: 1vh;
+}
+
+.form_box .botoes .botao:hover{
+    box-shadow: rgb(97, 97, 97) 0px 2px 10px;
+    transition: 0.4s;
+}
+
+.form_box .botoes_login .botao:hover{
+    box-shadow: rgb(97, 97, 97) 0px 2px 10px;
+    transition: 0.4s;
+}
+
+.form_box .botoes a{
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: #51e5fc;
+}
+
+.form_box .botoes_login a{
+    text-decoration: none;
+    font-size: 2.5vh;
+    font-weight: bold;
+    color: #ff54d4;
+}
+
+.form_box .botoes a:hover{
+    text-decoration: underline;
+
+}
+
+.form_box .botoes_login a:hover{
+    text-decoration: underline;
+}
