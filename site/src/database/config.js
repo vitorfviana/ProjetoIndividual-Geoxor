@@ -6,8 +6,8 @@ var sql = require('mssql');
 var mySqlConfig = {
     host: "localhost",
     database: "Geoxor",
-    user: "root",
-    password: "A89FECCO36F2.",
+    user: "aluno",
+    password: "sptech",
 };
 
 function executar(instrucao) {
