@@ -133,8 +133,13 @@ body{
     transition: 0.5s;
 }
 
-.form_box .input:focus{
+.card .form_box .input:focus{
     border: #ff54d4 2px solid;
+    outline: none;
+}
+
+.card .form_box .input textarea {
+    outline: none;
 }
 
 .form_box .botoes{
