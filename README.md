@@ -2,8 +2,6 @@
 Esta API será utilizada para conectar seu Website do Projeto de PI ao Banco de Dados, possibilitando:
 
 - Cadastro e Login de usuários
-- Mural de Avisos com Criação, Visualização, Atualização e Deleção de Avisos (CRUD - Create, Read, Update, Delete) 
-- Dashboard com gráficos em Chart.JS
 
 ## Como iniciar o servidor da aplicação do site?
 
